@@ -3,9 +3,9 @@
 
 ## Installation and startup (Windows)
 At first you need to clone repo to selected folder
-```console
-git clone *repo-name*
-cd *repo-name-folder*
+```python
+git clone https://github.com/FVladislove/Deep-machine-learning-labs.git
+cd Deep-machine-learning-labs
 ```
 Next you must create virtual environment and activate it
 ```python
@@ -13,7 +13,7 @@ python3 -m venv venv
 .venv/Scripts/activate
 ```
 Then you must install required modules
-```console
+```python
 pip install requirements.txt
 ```
 Finally you can run file using VSCode or JupyterLab
