@@ -10,13 +10,13 @@ cd Deep-machine-learning-labs
 Next you must create virtual environment and activate it
 ```bash
 python3 -m venv venv
-.venv/Scripts/activate
+venv/Scripts/activate
 ```
 Then you must install required modules
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
-Finally you can run file using VSCode or JupyterLab
+Finally you can select kernel (venv in our case) and run file using VSCode or JupyterLab
 ## Tasks
 Using Jupyter Notebook, create an application that asks the user for two
 integers a and b, and then displays the results of the following mathematical operations on the screen:
