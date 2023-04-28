@@ -17,13 +17,26 @@ Then you must install required modules
 pip install -r requirements.txt
 ```
 Finally, you can select kernel (venv in our case) and run the file using VSCode or JupyterLab
-## Tasks (PW-3)
-Modify the graph plotting program, which is given in the methodological part of practical work, according to followed requirements:
-1. Remove the image title, grid and legend
-2. Draw a graph of each of the four functions on a separate drawing panel. The axis of each panel must be signed. On the top centre of each panel should be added text mark: 
-    - "(a)" for panel 1
-    - "(b)" for panel 2
-    - "(c)" for panel 3
-    - "(d)" for panel 4
-3. The sinus graph should be plotted using a solid black line, cosine — a dotted red line, sinus squared — a dashed black line, and x^0.15 — a solid grey line.
-4. Set the x-axis diapason in each panel between 0 and 2π. The y-axis diapason should be such that graph of relevant functions might be viewed fully.
+## Tasks (PW-4)
+
+1. Write function for converting dictionary to Pandas series.
+2. Write function to convert array ro Pandas series.
+3. Write function to insert some data to series.
+4. There are next data:
+    ```python
+    data = {'animal': ['cat', 'cat', 'snake', 'dog', 'dog', 'cat', 'snake', 'cat', 'dog', 'dog'],
+            'age': [2.5, 3, 0, 5, np.nan, 5, 2, 4.5, np.nan, 7, 3],
+            'visits': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
+            'priority': ['yes', 'yes', 'no', 'yes', 'no', 'no', 'no', 'yes', 'no', 'no']
+            }
+    labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+    ```
+    Create DataFrame from this data, which have *labels* as indexes.
+    Then do this tasks: 
+    - select only *animal* and *age* from DF
+    - select data from rows [3, 4, 8] and cols ['animal', 'age']
+    - select rows, where visits count greater than 3
+    - select rows, where animal - cat and age lower then 3
+    - select rows, where age between 2 and 4 (include)
+    - calculate sum of all visits
+    - add new row 'k' to DF with value choosing for every column. Then delete this row to return output DF 
