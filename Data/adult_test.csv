@@ -1,5 +1,4 @@
 Age;Workclass;fnlwgt;Education;Education_Num;Martial_Status;Occupation;Relationship;Race;Sex;Capital_Gain;Capital_Loss;Hours_per_week;Country;Target
-|1x3 Cross validator;;;;;;;;;;;;;;
 25; Private;226802.0; 11th;7.0; Never-married; Machine-op-inspct; Own-child; Black; Male;0.0;0.0;40.0; United-States; <=50K.
 38; Private;89814.0; HS-grad;9.0; Married-civ-spouse; Farming-fishing; Husband; White; Male;0.0;0.0;50.0; United-States; <=50K.
 28; Local-gov;336951.0; Assoc-acdm;12.0; Married-civ-spouse; Protective-serv; Husband; White; Male;0.0;0.0;40.0; United-States; >50K.
