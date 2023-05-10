@@ -17,15 +17,11 @@ Then you must install required modules
 pip install -r requirements.txt
 ```
 Finally, you can select kernel (venv in our case) and run the file using VSCode or JupyterLab
-## Tasks (PW-5)
-Get acquainted with dataset 'Adult' and answer questions:
-1. How many men and women are represented in the dataset? 
-2. Women's average age?
-3. Percentage of German citizens?
-4. Average value and standard deviation for those who earn more than 50 thousand per year.
-5. Average value and standard deviation for those who earn less than 50 thousand per year.
-6. Is that true, that people who earn more than 50 t/year have at least secondary education (Bachelor, Prof-school, Doctorate, Masters, Assoc-voc, Assoc-acdm)
-7. Display age statistics for every race and sex. Use ***groupby()*** and ***describe()***. Find the maximum age of the american-indian-Eskimo race.
-8. Among whom is the greater share of those earning a lot (>50 t.): married or single men? Consider those with a marital status beginning from ***Married***
-9. What is the max number of hours a person works a week? How many people work such, and what percentage of them are those who earn a lot (>50 t.)
-10. Calculate the average work time (hours per week) for low and high earners for each country. What will it be for Japan?
+## Tasks (PW-6)
+For the task implementation will be used dataset "Titanic train" about "Titanic" ship passengers. First get acquainted with dataset features, after done next tasks: 
+1. Delete feature `Cabin` and then all rows with omissions. Then build pairwise dependencies of features `Age, Fare, Pclass, Sex, SibSp, Parch, Embarked, Survived` using function `scatter_matrix` from Pandas library or method `pairplot` from Seaborn
+2. Build `boxplot` that reflects dependency from ticket fee on the cabin class (Pclass).
+Optional: create new `Fare_no_out` which excludes costs, that are different from mean by class more over 2 standard deviation. Important: must be excluded emissions in dependency from cabin class. Otherwise excludes only the biggest (1 class) and small (3 class) costs.
+3. Display correlation between dead and survivors depending on gender using `Seaborn.countplot` and argument `hue`
+4. Display correlation between dead and survivors depending on cabin class using `Seaborn.countplot` and argument `hue`
+5. Which surviving fact depends on passenger age? Check (graphically) assumption that young survived more often. Let, conditionally, young - before 30 years old, old - after 60.
