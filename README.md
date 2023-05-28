@@ -17,11 +17,10 @@ Then you must install required modules
 pip install -r requirements.txt
 ```
 Finally, you can select kernel (venv in our case) and run the file using VSCode or JupyterLab
-## Tasks (PW-6)
-For the task implementation will be used dataset "Titanic train" about "Titanic" ship passengers. First get acquainted with dataset features, after done next tasks: 
-1. Delete feature `Cabin` and then all rows with omissions. Then build pairwise dependencies of features `Age, Fare, Pclass, Sex, SibSp, Parch, Embarked, Survived` using function `scatter_matrix` from Pandas library or method `pairplot` from Seaborn
-2. Build `boxplot` that reflects dependency from ticket fee on the cabin class (Pclass).
-Optional: create new `Fare_no_out` which excludes costs, that are different from mean by class more over 2 standard deviation. Important: must be excluded emissions in dependency from cabin class. Otherwise excludes only the biggest (1 class) and small (3 class) costs.
-3. Display correlation between dead and survivors depending on gender using `Seaborn.countplot` and argument `hue`
-4. Display correlation between dead and survivors depending on cabin class using `Seaborn.countplot` and argument `hue`
-5. Which surviving fact depends on passenger age? Check (graphically) assumption that young survived more often. Let, conditionally, young - before 30 years old, old - after 60.
+## Tasks (PW-7)
+1. **Decision tree without params settings** <br/>
+   Teach decision tree (DecisionTreeClassifier) with max depth 3 and evaluate precision indicator on test data. Use parameter `random_state=17` for results reproducibility. <br/>
+   Make a precision with trained model.
+2. **Decision tree with params settings**
+   Teach decision tree (DecisionTreeClassifier, random_state=17). Find optimal max depth by using 5-times cross check (GridSearchCV) <br/>
+   Teach decision tree with max depth 9 (the best `max_depth` in our case) and calculate precision test set. Use `random_state=17` for reproducibility.
