@@ -3,19 +3,30 @@
 
 ## Installation and startup (Windows)
 At first you need to clone repo to selected folder
+
 ```bash
 git clone https://github.com/FVladislove/Deep-machine-learning-labs.git
 cd Deep-machine-learning-labs
 ```
+
 Next you must create virtual environment and activate it
+
 ```bash
 python3 -m venv venv
 venv/Scripts/activate
 ```
+If you have problem with activation, you need first run Powershell as administrator and run this command to allow files executing:
+
+```powershell
+Set-ExecutionPolicy remotesigned
+```
+
 Then you must install required modules
+
 ```bash
 pip install -r requirements.txt
 ```
+
 Finally, you can select kernel (venv in our case) and run the file using VSCode or JupyterLab
 ## Tasks (PW-7)
 1. **Decision tree without params settings** <br/>
